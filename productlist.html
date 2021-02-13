@@ -17,19 +17,23 @@
     </header>
     <main>
       <h2>PUMA</h2>
-      <article class="smallProduct">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/1000/1529.webp"
-          alt="Topwear Jackets Fall 2010 Sports Track Jacket"
-        />
-        <h3>Topwear Jackets Fall 2010 Sports Track Jacket</h3>
-        <p class="subtle">Jacket | Puma</p>
-        <div>
-          <p>Now DKK 1899,-</p>
-        </div>
-        <a href="product.html">Read More</a>
-      </article>
-      <article class="smallProduct onSale">
+      <template id="smallProductTemplate">
+        <article class="smallProduct">
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/1000/1529.webp"
+            alt="Topwear Jackets Fall 2010 Sports Track Jacket"
+          />
+          <h3>Topwear Jackets Fall 2010 Sports Track Jacket</h3>
+          <p class="subtle">Jacket | Puma</p>
+          <p class="price"><span>Prev.</span> DKK 4299,-</p>
+          <div class="discounted">
+            <p>Now DKK 1595,-</p>
+            <p>-34%</p>
+          </div>
+          <a href="product.html?id=1565">Read More</a>
+        </article>
+      </template>
+      <!--<article class="smallProduct onSale">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/1000/1530.webp"
           alt="Blue T20"
@@ -56,7 +60,8 @@
           <p>-34%</p>
         </div>
         <a href="product.html">Read More</a>
-      </article>
+      </article>-->
     </main>
+    <script src="productlist.js"></script>
   </body>
 </html>
